@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assest/css/base.css">
+    <link rel="stylesheet" href="./assest/css/main.css">
+    <link rel="stylesheet" href="./assest/css/gridz.css">
+    <link rel="stylesheet" href="./assest/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__close">
+                <i class="modal__close-icon fa-solid fa-xmark"></i>
+            </div>
+            <header class="modal__header">
+                <i class="modal__header-icon fa-solid fa-suitcase"></i>
+                Tickets
+            </header>
+            <div class="modal__body">
+                <label for="modal-input" class="modal__body-label">
+                    <i class="modal__body-icon fa-sharp fa-solid fa-cart-shopping"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="modal-input" type="text" class="modal__body-input" placeholder="How many?">
+                <label for="modal-email" class="modal__body-label">
+                    <i class="modal__body-icon fa-solid fa-user"></i>
+                    Send To
+                </label>
+                <input id="modal-email" type="text" class="modal__body-input" placeholder="Enter email">
+                <button class="modal__body-btn">PAY 
+                    <i class="fa-solid fa-check"></i>
+                </button>
+            </div>
+            <footer class="modal__footer">
+                Need
+                <a href="" class="modal__footer-help">help?</a>
+            </footer>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="header" id="header__wrapper">
+            <ul class="header__list">
+                <li class="header__list-item">
+                    <a href="" class="header__list-item-link">Home</a>
+                </li>
+                <li class="header__list-item ">
+                    <a href="#about" class="header__list-item-link ">Band</a>
+                </li>
+                <li class="header__list-item ">
+                    <a href="#tour" class="header__list-item-link">Tour</a>
+                </li>
+                <li class="header__list-item ">
+                    <a href="#contact" class="header__list-item-link">Contact</a>
+                </li>
+                <li class="header__list-item  header__list-item--More">
+                    <a href="#" class="header__list-item-link">More 
+                        <i class=" fa fa-caret-down"></i>
+                    </a>
+                    <ul class="header__subMore">
+                        <li class="header__subMore-item">
+                            <a href="" class="header__subMore-item-link">
+                                Merchandise
+                            </a>
+                        </li>
+                        <li class="header__subMore-item">
+                            <a href="" class="header__subMore-item-link">
+                                Extras
+                            </a>
+                        </li>
+                        <li class="header__subMore-item">
+                            <a href="" class="header__subMore-item-link">
+                                Media
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header__search hideOff-Moblie">
+                <i class="header__search-item fa fa-search"></i>
+            </div>
+                <div class="header__category-moblie" id="category_moblie">
+                    <i class="header__category-moblie-item fa-solid fa-bars"></i>
+                </div>
+        </div>
+        <!-- <input type="checkbox" name="" id="category__check" class="checkbox__category" hidden>
+        <div id="ctg_moblie" class="category__moblie">
+            <ul class="category__moblie-list">
+                <li class="category__moblie-item">
+                    <a href="#brand" class="category__moblie-link">
+                        band
+                    </a>
+                </li>
+                <li class="category__moblie-item">
+                    <a href="#tour" class="category__moblie-link">
+                        tour
+                    </a>
+                </li>
+                <li class="category__moblie-item">
+                    <a href="#contact" class="category__moblie-link">
+                        contact
+                    </a>
+                </li>
+                    <li class="category__moblie-item ">
+                        <a href="" class="category__moblie-link">
+                            search
+                        </a>
+            
+                    </li>
+                
+    
+            </ul>  
+        </div> -->
+        <input type="checkbox" name="" id="moblie__search-check" class="checkbox__moblie-search" hidden>
+        <div class="category__moblie-search">
+            <input type="text" name="" id="" class="category__search" placeholder="Nhập vào để tìm kiếm">
+            <i class="category__search-item fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="liner">
+            <div class="liner-text hideOff-Moblie">
+                <h2 class="liner-heading">
+                    New York
+                </h2>
+                <p class="liner-sub">
+                    The atmosphere in New York is lorem ipsum.
+                </p>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div id="about" class="about">
+                <div class="grid wide">
+                    <div   class="content__about">
+
+                        <h1 class="about__nameBand">
+                            The Band
+                        </h1>
+                        <p class="about__own-title">
+                            We love music
+                        </p>
+                        <p class="about__sub">
+                            We have created a fictional band website.
+                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                             aliquip ex ea commodo consequat.
+                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                              eu fugiat nulla pariatur.
+                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                               mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    
+                        <div class="row grid_row--about">
+                            <div class="col p-4 t-4 m-12 grid_colum1--about">
+                                <h3 class="about__name">
+                                    Name
+                                </h3>
+                                <img src="./assest/img/bandmember.jpg" alt="" class="about__img">
+                            </div>
+                            <div class="col p-4 t-4 m-12 grid_colum1--about">
+                                <h3 class="about__name">
+                                    Name
+                                </h3>
+                                <img src="./assest/img/bandmember.jpg" alt="" class="about__img">
+                            </div>
+                            <div class="col p-4 t-4 m-12 grid_colum1--about">
+                                <h3 class="about__name">
+                                    Name
+                                </h3>
+                                <img src="./assest/img/bandmember.jpg" alt="" class="about__img">
+                            </div>
+                            
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tour" class="tour">
+    
+                <div class="grid wide">
+                    <div class="content-tour">
+
+                        <h1 class="tour-dates">
+                            Tour Dates
+                        </h1>
+                        <p class="tour-subbook">
+                            Remenber to book your tickets!
+                        </p>
+                        <ul class="tour-listday">
+                            <li class="tour-listday-item">
+                                <p class="tour-listday-month">
+                                    September
+                                </p>
+                                <span class="tuor-listday-classify">
+                                    Sold out
+                                </span>
+                            </li>
+                            <li class="tour-listday-item">
+                                <p class="tour-listday-month">
+                                    October
+                                </p>
+                                <span class="tuor-listday-classify">
+                                    Sold out
+                                </span>
+                            </li>
+                            <li class="tour-listday-item">
+                                <p class="tour-listday-month">
+                                    October
+                                </p>
+                                <span class="tuor-listday-icon">
+                                    3
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="tickets">
+
+                            <div class="row">
+                                <div class="col p-4 t-4 m-12 ">
+            
+                        
+                                        <div class="tickets__content">
+                                            <img src="./assest/img/newyork.jpg" alt="" class="tour-img">
+
+                                            <p class="tour-location">
+                                                New York
+                                            </p>
+                                            <p class="tour-date">
+                                                Fri 27 Nov 2016
+                                            </p>
+                                            <p class="tour-sub">
+                                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                            </p>
+                                            <button class="btn tour-sub-btn">
+                                                Buy Tickets
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col p-4 t-4 m-12 ">
+            
+                        
+                                        <div class="tickets__content">
+                                            <img src="./assest/img/paris.jpg" alt="" class="tour-img">
+
+                                            <p class="tour-location">
+                                                Paris
+                                            </p>
+                                            <p class="tour-date">
+                                                Sat 28 Nov 2016
+                                            </p>
+                                            <p class="tour-sub">
+                                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                            </p>
+                                            <button class="btn tour-sub-btn">
+                                                Buy Tickets
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col p-4 t-4 m-12 ">
+            
+                        
+                                        <div class="tickets__content">
+                                            <img src="./assest/img/sanfran.jpg" alt="" class="tour-img">
+
+                                            <p class="tour-location">
+                                                San Francisco
+                                            </p>
+                                            <p class="tour-date">
+                                                Sun 29 Nov 2016
+                                            </p>
+                                            <p class="tour-sub">
+                                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                            </p>
+                                            <button class="btn tour-sub-btn">
+                                                Buy Tickets
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="contact" class="contact">
+                <div class="grid wide">
+                    <div class="contact-content">
+
+                        <h1 class="contact-contact">
+                            contact
+                        </h1>
+                        <p class="contact-sub">
+                            Fan? Drop a note!
+                        </p>
+                        <form action=""> 
+                            <div class="row spaceBeetwen">
+                                <div class="col p-6 m-6 m-12">
+                                    <ul class="contact-info">
+                                        <li class="contact-info-item">
+                                            <i class="contact-item fa-solid fa-location-dot"></i>
+                                            Chicago, US
+                                        </li>
+                                        <li class=" contact-info-item">
+                                            <i class=" contact-item fa-solid fa-phone"></i>
+                                            Phone: 
+                                            <a class="contact-item-link" href="tel:+00 151515">+00 151515</a>
+                        
+                                        </li>
+                                        <li class="contact-info-item">
+                                            <i class="contact-item fa-solid fa-envelope"></i>
+                                            Email:
+                                            <a class="contact-item-link" href="mailto:mail@mail.com">mail@mail.com</a>
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <div class="col p-6 m-6 m-12">
+                                        <div class="contact-form-info">
+                                            <input class="contact-input contact-form-name" type="text"  required placeholder="Name">
+                                            <input class="contact-input contact-form-Email" type="email" required placeholder="Email">
+                                        </div>
+                                        <input class="contact-input contact-form-Message" type="text" required  placeholder="Message">
+                                        <input class="contact-send" type="submit" value="SEND" >
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assest/img/map.jpg" alt="" class="map">
+        <div class="footer">
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <i class="footer__list-icon fa-brands fa-square-facebook"></i>
+                </li>
+                <li class="footer__list-item">
+                    <i class="footer__list-icon fa-brands fa-instagram"></i>
+                </li>
+                <li class="footer__list-item">
+                    <i class="footer__list-icon fa-brands fa-snapchat"></i>
+                </li>
+                <li class="footer__list-item">
+                    <i class="footer__list-icon fa-brands fa-pinterest-p"></i>
+                </li>
+                <li class="footer__list-item">
+                    <i class="footer__list-icon fa-brands fa-twitter"></i>
+                </li>
+                <li class="footer__list-item">
+                    <i class="footer__list-icon fa-brands fa-linkedin-in"></i>
+                </li>
+            </ul>
+            <p class="footer-title">
+                Powered by
+                <a href="" class="footer-title-link">
+                    w3.css
+                </a>
+            </p>
+        </div>
+    </div>
+    <script>
+        var header = document.getElementById('header__wrapper');
+        var categoryMoblie = document.getElementById('category_moblie')
+        var headerHeigh = header.clientHeight;
+        // Tăt mở Menu
+        categoryMoblie.onclick = function(){
+            var isOpen = header.clientHeight === headerHeigh;
+            console.log(isOpen);    
+            if(isOpen){
+                header.style.height = 'auto';
+            }else{
+                header.style.height = null;
+            }
+        }
+        // click off menu
+        var menuListItem = document.querySelectorAll('.header__list-item .header__list-item-link');
+        console.log(menuListItem);
+        for (let i = 0; i < menuListItem.length; i++) {
+            var item = menuListItem[i];
+            item.onclick = function(event){
+                var isClosed = this.nextElementSibling && this.nextElementSibling.classList.contains('header__subMore');
+                console.log(isClosed);
+                if(isClosed){
+                    event.preventDefault();
+                }
+                else{
+                    header.style.height = null;
+                }
+            }
+        }
+        var subItem = document.getElementsByClassName('header__subMore-item-link');
+        subItem.onclick = function(){
+            header.style.height = null;
+        }
+
+    </script>
+</body>
+</html> 
